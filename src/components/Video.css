@@ -1,0 +1,16 @@
+.top-page-heading {
+    color: white;
+}
+.video-panel{
+    color: white;  
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 30px;  
+    padding: 10px;
+    grid-column: 1 / 2;
+    margin-left: 25%;
+}
+.page-button5 {
+    margin-left: 100%;
+    margin-top: -35%;
+}

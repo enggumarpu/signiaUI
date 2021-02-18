@@ -1,0 +1,31 @@
+.form-control {
+  width: 450px;
+  height: 50px;
+}
+
+.white-color-logout {
+  color: #ffffff;
+  font-size: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.white-color-bold {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0px;
+}
+.heading-font {
+  color: #ffffff;
+}
+
+.padding-11 {
+  padding: 11px;
+  text-align: right;
+}
+.profile-user-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 360px;
+  border: 1px solid #27ae60;
+}

@@ -1,0 +1,53 @@
+.color-white {
+  color: #ffffff;
+}
+.white-heading {
+  color: #ffffff;
+}
+.header-logo {
+  padding: 25px 55px;
+}
+.buttonadmin {
+  color: white;
+  margin-top: -8%;
+  margin-left: 67%;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffffff;
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+.white-color {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: right;
+  margin-top: 5px;
+  padding: 25px 60px;
+}
+.form-control {
+  width: 450px;
+  height: 50px;
+}
+.login-btn {
+  width: 425px;
+  height: 50px;
+  margin-top: 25px;
+}
+.btn-wrap {
+  text-align: right;
+  padding: 29px 19px;
+}
+.social-links {
+  display: flex;
+  list-style: none;
+  margin-left: 30%;
+}
+.buttons {
+  text-align: center;
+}
+.errPadding{
+  padding: 5px 64px;
+}

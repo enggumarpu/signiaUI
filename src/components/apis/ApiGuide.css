@@ -1,0 +1,19 @@
+.profile-user-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 360px;
+  border: 1px solid #27ae60;
+}
+.heading-font {
+  color: #ffffff;
+}
+.heading-title {
+  font-size: 22px;
+}
+.underline {
+  border: none;
+  font-size: 22px;
+}
+.btn2 {
+  margin-left: 70%;
+}

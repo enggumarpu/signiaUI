@@ -1,0 +1,16 @@
+.para {
+  margin-left: -50%;
+}
+.profile-user-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 360px;
+  border: 1px solid #27ae60;
+}
+
+.primary-text-color2 {
+  color: white;
+}
+.errPaddingFields {
+  padding: 0px 15px 10px
+}

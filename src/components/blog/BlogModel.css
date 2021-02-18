@@ -1,0 +1,53 @@
+/* The Modal (background) */
+.modalhell {
+  width: 75%;
+  background: #D3D3D3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modalhell__header {
+  padding: 0.5rem;
+  background: #5101d1;
+  color: white;
+}
+/* Modal Content */
+.modalcontent {
+  padding: 1.5rem;
+}
+.modelhell__label{
+  margin: 1rem;
+}
+.modelhell__actions{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+.modehell__button{
+  margin: 0.5rem;
+}
+@media (min-width: 768px) {
+  .modalhell {
+    width: 30rem;
+    /* left: calc((100% - 30rem) / 2); */
+    left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

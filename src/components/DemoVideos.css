@@ -1,0 +1,19 @@
+.profile-user-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 360px;
+    border: 1px solid #27AE60;
+}
+.page-button5 {
+    margin-left: 20%;
+    margin-top: 3%;
+}
+.video-panel{
+    color: white;  
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 30px;  
+    padding: 10px;
+    grid-column: 1 / 2;
+    margin-left: 25%;
+}

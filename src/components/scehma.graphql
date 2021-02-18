@@ -1,0 +1,223 @@
+type Blog {
+  id: String!
+  Title: String!
+  Message: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+type ContactUs {
+  id: String!
+  Email: String!
+  ContactNumber: String!
+  Message: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+input CreateBlogInput {
+  Title: String!
+  Message: String!
+}
+
+input CreateContactUsInput {
+  Email: String!
+  ContactNumber: String!
+  Message: String!
+}
+
+input CreateDemoVideoInput {
+  VideoUrl: String!
+  Title: String!
+  Description: String!
+  TotalViews: String!
+}
+
+input CreateEventInput {
+  Title: String!
+  Image: String!
+  Discription: String!
+}
+
+input CreateMeetingVideoInput {
+  VideoUrl: String!
+  Discription: String!
+}
+
+input CreateNewsInput {
+  Title: String!
+  Discription: String!
+}
+
+input CreateRegisterEventInput {
+  Name: String!
+  DOB: String!
+  Email: String!
+  Contact: String!
+  Address: String!
+  City: String!
+  Country: String!
+  Image: String!
+  EventId: String!
+}
+
+scalar DateTime
+
+type DemoVideo {
+  id: String!
+  Email: String!
+  ContactNumber: String!
+  Message: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+type Event {
+  id: String!
+  Title: String!
+  Image: String!
+  Discription: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+type MeetingVideo {
+  id: String!
+  VideoUrl: String!
+  Discription: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+type Mutation {
+  createEvent(createEventInput: CreateEventInput!): Event!
+  updateEvent(updateEventInput: UpdateEventInput!, id: String!): Event!
+  deleteEvent(id: String!): String!
+  createBlog(createBlogInput: CreateBlogInput!): Blog!
+  updateBlog(updateBlogInput: UpdateBlogInput!, id: String!): Blog!
+  deleteBlog(id: String!): String!
+  createContactUs(createContactUsInput: CreateContactUsInput!): ContactUs!
+  updateContactUs(
+    updateContactUsInput: UpdateContactUsInput!
+    id: String!
+  ): ContactUs!
+  deleteContactUs(id: String!): String!
+  createDemoVideo(createDemoVideoInput: CreateDemoVideoInput!): DemoVideo!
+  updateDemoVideo(
+    updateDemoVideoInput: UpdateDemoVideoInput!
+    id: String!
+  ): DemoVideo!
+  deleteDemoVideo(id: String!): String!
+  createMeetingVideo(
+    createMeetingVideoInput: CreateMeetingVideoInput!
+  ): MeetingVideo!
+  updateMeetingVideo(
+    updateMeetingVideoInput: UpdateMeetingVideoInput!
+    id: String!
+  ): MeetingVideo!
+  deleteMeetingVideo(id: String!): String!
+  createNews(createNewsInput: CreateNewsInput!): News!
+  updateNews(updateNewsInput: UpdateNewsInput!, id: String!): News!
+  deleteNews(id: String!): String!
+  createRegisterEvent(
+    createRegisterEventInput: CreateRegisterEventInput!
+  ): RegisterEvent!
+  updateRegisterEvent(
+    updateRegisterEventInput: UpdateRegisterEventInput!
+    id: String!
+  ): RegisterEvent!
+  deleteRegisterEvent(id: String!): String!
+}
+
+type News {
+  id: String!
+  Title: String!
+  Discription: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+type Query {
+  eventById(id: String!): Event!
+  getAllEvents: [Event!]!
+  BlogById(id: String!): Blog!
+  getAllBlogs: [Blog!]!
+  ContactUsById(id: String!): ContactUs!
+  getAllContactUss: [ContactUs!]!
+  DemoVideoById(id: String!): DemoVideo!
+  getAllDemoVideos: [DemoVideo!]!
+  MeetingVideoById(id: String!): MeetingVideo!
+  getAllMeetingVideos: [MeetingVideo!]!
+  NewsById(id: String!): News!
+  getAllNewss: [News!]!
+  RegisterEventById(id: String!): RegisterEvent!
+  getAllRegisterEvents: [RegisterEvent!]!
+}
+
+type RegisterEvent {
+  id: String!
+  Name: String!
+  DOB: DateTime!
+  Email: String!
+  Contact: String!
+  Address: String!
+  City: String!
+  Country: String!
+  Image: String!
+  EventId: String!
+  CreatedUserId: Float!
+  CreatedDate: DateTime!
+  UpdatedDate: DateTime!
+}
+
+input UpdateBlogInput {
+  Title: String!
+  Message: String!
+}
+
+input UpdateContactUsInput {
+  Email: String!
+  ContactNumber: String!
+  Message: String!
+}
+
+input UpdateDemoVideoInput {
+  VideoUrl: String!
+  Title: String!
+  Description: String!
+  TotalViews: String!
+}
+
+input UpdateEventInput {
+  Title: String!
+  Image: String!
+  Discription: String!
+}
+
+input UpdateMeetingVideoInput {
+  VideoUrl: String!
+  Discription: String!
+}
+
+input UpdateNewsInput {
+  Title: String!
+  Discription: String!
+}
+
+input UpdateRegisterEventInput {
+  Name: String!
+  DOB: DateTime!
+  Email: String!
+  Contact: String!
+  Address: String!
+  City: String!
+  Country: String!
+  Image: String!
+  EventId: String!
+}

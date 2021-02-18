@@ -1,0 +1,251 @@
+.support {
+  color: white;
+}
+/* .form-control {
+  width: 750px;
+  height: 50px;
+} */
+.profile-user-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 360px;
+  border: 1px solid #27ae60;
+}
+
+.ReactModal__Overlay {
+  z-index: 99;
+}
+
+.modal {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+}
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: .3rem;
+  outline: 0;
+}
+.registeration-form {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.heading-font {
+  color: #ffffff;
+}
+.submit {
+  margin-left: 76%;
+  margin-top: -7%;
+}
+.card-body {
+  color: white;
+  background-color: #2c3a6c;
+}
+.blue-default {
+  background-color: #4157a4;
+  color: white;
+}
+.Eventsclass {
+  color: white;
+  margin-left: 160%;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+.react-tabs ul li {
+  font-size: 20px;
+  color: #fff;
+  display: initial;
+  padding-right: 20px;
+  list-style: none;
+  cursor: pointer;
+  opacity: 0.6;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.react-tabs ul li:hover,
+.react-tabs ul li:active,
+.react-tabs ul li.react-tabs__tab--selected {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: none;
+}
+
+/**/
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control{
+  /* background-color: lightblue; */
+}
+.registeration-form {
+  margin-left: 0%;
+}
+.styleSelect select {
+  background: transparent;
+  width: 100%;
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 25px;
+  border: 1px solid white;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #000;
+}
+
+.styleSelect {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 0 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1c348a;
+  overflow: hidden;
+  background: url("../../assets/img/downarrow.png") no-repeat right #fff;
+  /* border: 2px solid #000; */
+}
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 25px;
+  display: inline-block;
+  font: inherit;
+  width: 100%;
+  height: 50px;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.round {
+  background-image: linear-gradient(
+    45deg
+    , transparent 50%, black 50%), linear-gradient(
+    135deg
+    , black 50%, transparent 50%), radial-gradient(#fff 70%, transparent 72%);
+        background-position: calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - .5em) .5em;
+        background-size: 10px 10px, 10px 10px, 2.5em 2.5em;
+        background-repeat: no-repeat;
+    }
+
+select.round:focus {
+  background-image: linear-gradient(
+    45deg
+    , transparent 50%, black 50%), linear-gradient(
+    135deg
+    , black 50%, transparent 50%), radial-gradient(#fff 70%, transparent 72%);
+        background-position: calc(100% - 25px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - .5em) .5em;
+        background-size: 10px 10px, 10px 10px, 2.5em 2.5em;
+        background-repeat: no-repeat;
+        outline:none;
+    }
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+ border: 3px solid #ccc;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  /* background-color: #ccc; */
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  /* background-color: #2196F3; */
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 15px;
+	border-radius: 50%;
+	background: white;
+}
+
